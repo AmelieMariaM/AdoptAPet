@@ -1,23 +1,54 @@
-import logo from './logo.svg';
-import './App.css';
+import PetList from "./components/PetList";
+import petPhoto from "./components/Images/5.jpeg";
+import { useState } from "react";
+import "./style/App.css";
 
 function App() {
+  const [pets, setPets] = useState([
+    {
+      photo: { petPhoto },
+      name: "Angel",
+      description: "Adorable staffie puppy",
+      isfavorite: true,
+    },
+    {
+      photo: { petPhoto },
+      name: "Angel",
+      description: "Adorable staffie puppy",
+      isfavorite: true,
+    },
+    {
+      photo: { petPhoto },
+      name: "Angel",
+      description: "Adorable staffie puppy",
+      isfavorite: false,
+    },
+    {
+      photo: { petPhoto },
+      name: "Angelita",
+      description: "Gorgeous baby",
+      isfavorite: false,
+    },
+    {
+      photo: { petPhoto },
+      name: "Angel",
+      description: "Adorable staffie puppy",
+      isfavorite: true,
+    },
+  ]);
+
+  function toggleFavorites(index) {
+    console.log("État des animaux avant la mise à jour :", pets);
+    const updatedPets = pets.map((pet, i) =>
+      i === index ? { ...pet, isfavorite: !pet.isfavorite } : pet
+    );
+    console.log("État des animaux après la mise à jour :", updatedPets);
+    setPets(updatedPets);
+  }
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <PetList list={pets} onToggleFavorites={toggleFavorites} />
     </div>
   );
 }
