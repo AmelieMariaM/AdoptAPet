@@ -1,6 +1,51 @@
-.like {
+.pet {
+  width: 280px;
+  height: 400px;
+  padding: 20px;
+  border: 1px solid gray;
+  border-radius: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: aliceblue;
+  box-shadow: 5px -5px 15px 0px rgba(14, 13, 14, 0.5);
+  box-sizing: border-box;
 }
 
+img {
+  border-radius: 25%;
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  margin: 0;
+}
+
+h2,
+p {
+  margin: 0px;
+  padding: 8px;
+  text-align: center; /* Centre le texte : sinon par défaut, le texte s'aligne à gauche*/
+}
+p {
+  width: 200px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis; /* Ajoute "..." si le texte est trop long */
+}
+
+button {
+  align-self: flex-end;
+  order: 2;
+}
 .unlike {
   color: red;
+  border-radius: 25%;
+  border: 0.05rem solid gray;
+  padding-top: 0.3rem;
+}
+.like {
+  border-radius: 25%;
+  border: 0.05rem solid gray;
+  padding-top: 0.3rem;
 }

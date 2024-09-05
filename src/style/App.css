@@ -1,0 +1,31 @@
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  margin: 0;
+  padding: 0;
+  border: 1px solid rgb(16, 14, 14);
+  max-width: 100%;
+  max-height: fit-content;
+  background-color: rgba(126, 122, 168);
+}
+
+h1 {
+  position: fixed;
+  width: 100%;
+  margin: -1px 0;
+  padding: 0;
+  background-color: rgba(40, 32, 85);
+  border-top: 4px solid rgba(40, 32, 85);
+  border-bottom: 4px solid #fdb347;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: -2px;
+  color: white;
+  font-size: 3rem;
+  font-family: "Arial", sans-serif;
+  font-weight: bold;
+}

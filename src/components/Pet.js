@@ -6,7 +6,7 @@ function Pet({ photo, name, description, isfavorite, onToggleFavorites }) {
   const faveClass = isfavorite ? "unlike" : "like";
 
   return (
-    <div>
+    <div className="pet">
       <img src={photo} alt={name} />
       <h2>{name}</h2>
       <p>{description}</p>
