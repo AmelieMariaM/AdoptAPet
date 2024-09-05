@@ -1,6 +1,6 @@
 .pet {
-  width: 280px;
-  height: 400px;
+  width: 380px;
+  height: 450px;
   padding: 20px;
   border: 1px solid gray;
   border-radius: 10%;
@@ -23,14 +23,13 @@ img {
 
 h2,
 p {
-  margin: 0px;
+  margin: 8px;
   padding: 8px;
   text-align: center; /* Centre le texte : sinon par défaut, le texte s'aligne à gauche*/
 }
 p {
-  width: 200px;
+  flex: 1; /* Permet au paragraphe de s'étendre pour utiliser l'espace disponible */
   overflow: hidden;
-  white-space: nowrap;
   text-overflow: ellipsis; /* Ajoute "..." si le texte est trop long */
 }
 
@@ -43,9 +42,25 @@ button {
   border-radius: 25%;
   border: 0.05rem solid gray;
   padding-top: 0.3rem;
+  cursor: pointer;
 }
 .like {
   border-radius: 25%;
   border: 0.05rem solid gray;
   padding-top: 0.3rem;
+  cursor: pointer;
+}
+
+.more-info {
+  order: 1;
+  align-self: center;
+  border-radius: 25px;
+  border: none;
+  background-color: rgba(40, 32, 85, 0.9);
+  color: white;
+  text-align: center;
+  font-size: 10px;
+  padding: 8px;
+  margin: 5px 0;
+  cursor: pointer;
 }

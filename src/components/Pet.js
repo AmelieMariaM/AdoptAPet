@@ -13,6 +13,7 @@ function Pet({ photo, name, description, isfavorite, onToggleFavorites }) {
       <button className={faveClass} onClick={onToggleFavorites}>
         {isfavorite ? <UnlikeButton /> : <LikeButton />}
       </button>
+      <button className="more-info">Read More</button>
     </div>
   );
 }

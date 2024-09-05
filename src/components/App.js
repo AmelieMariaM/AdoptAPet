@@ -22,21 +22,20 @@ function App() {
       photo: petPhoto2,
       name: "Pongo",
       description:
-        "Adorable staffie puppy. Quisque euismod, nunc sit amet auctor gravida, nisl odio fermentum nulla, vel viverra nisi justo non sapien.",
+        "Adorable staffie puppy. Quisque euismod, vel viverra nisi justo non sapien.",
       isfavorite: true,
     },
     {
       photo: petPhoto3,
       name: "Kuzco",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque euismod, nunc sit amet auctor gravida, nisl odio fermentum nulla, vel viverra nisi justo non sapien.",
+      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
       isfavorite: false,
     },
     {
       photo: petPhoto4,
       name: "Jacob",
       description:
-        "Gorgeous baby. Fusce auctor orci at nibh hendrerit, non elementum nulla pretium. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; ",
+        "Gorgeous baby. Fusce auctor orci atu orci luctus et ultrices posuere.",
       isfavorite: false,
     },
     {
@@ -48,8 +47,7 @@ function App() {
     {
       photo: petPhoto6,
       name: "Bestie",
-      description:
-        "Sed vel tristique magna. Nam maximus ultricies est, at efficitur orci facilisis vel. Donec vitae eros vitae velit dapibus faucibus sit amet eu dolor. ",
+      description: "Sed vel tristique magna. Nam maximus sit amet eu dolor. ",
       isfavorite: true,
     },
     {
