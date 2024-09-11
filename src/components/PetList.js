@@ -10,8 +10,11 @@ function PetList({ list, onToggleFavorites }) {
           <Pet
             photo={pet.photo}
             name={pet.name}
+            species={pet.species}
+            location={pet.location}
             description={pet.description}
             isfavorite={pet.isfavorite}
+            sos={pet.sos}
             onToggleFavorites={() => onToggleFavorites(index)}
           />
         </li>
